@@ -1,0 +1,242 @@
+AIM:- Implement jQuery- o Interactive Web Elements Using jQuery Events and selectors hosting projects on Google Sites.
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Click event
+    $("#btn1").click(function(){
+        $("#text").text("Button Clicked using jQuery!");
+    });
+
+    // Mouse over event
+    $("#box").mouseover(function(){
+        $(this).css("background-color","lightblue");
+    });
+
+    // Mouse out event
+    $("#box").mouseout(function(){
+        $(this).css("background-color","lightgray");
+    });
+
+});
+
+</script>
+
+<style>
+
+#box{
+width:200px;
+height:100px;
+background-color:lightgray;
+text-align:center;
+line-height:100px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Interactive Web Elements using jQuery</h2>
+
+<button id="btn1">Click Me</button>
+
+<p id="text">Original Text</p>
+
+<div id="box">Hover Over Me</div>
+
+</body>
+</html>
+
+Output:-
+
+Click Click Me button
+ Text changes to:
+Button Clicked using jQuery!
+ Move mouse over the box
+➡ Box color becomes blue
+ Move mouse away
+➡ Box color becomes gray
+
+
+ 
+
+
+
+
+
+
+B) jQuery Effects- Hide/Show, Fade, Slide, Animate, stop.
+
+Code:-
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Effects Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Hide
+    $("#hide").click(function(){
+        $("#box").hide();
+    });
+
+    // Show
+    $("#show").click(function(){
+        $("#box").show();
+    });
+
+    // Fade
+    $("#fade").click(function(){
+        $("#box").fadeOut();
+    });
+
+    // Slide
+    $("#slide").click(function(){
+        $("#box").slideToggle();
+    });
+
+    // Animate
+    $("#animate").click(function(){
+        $("#box").animate({left:'200px'});
+    });
+
+    // Stop
+    $("#stop").click(function(){
+        $("#box").stop();
+    });
+
+});
+
+</script>
+
+<style>
+
+#box{
+width:150px;
+height:100px;
+background-color:lightblue;
+position:relative;
+margin-top:20px;
+text-align:center;
+line-height:100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>jQuery Effects Demo</h2>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fade">Fade</button>
+<button id="slide">Slide</button>
+<button id="animate">Animate</button>
+<button id="stop">Stop</button>
+
+<div id="box">Box</div>
+
+</body>
+</html>
+
+Output:-
+
+ 
+For Hide:-
+
+ 
+
+C) Get, Set, Add, Remove, CSS Classes in jQuery
+Code:-
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>jQuery Classes Example</title>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    // Get text
+    $("#get").click(function(){
+        alert($("#text").text());
+    });
+
+    // Set text
+    $("#set").click(function(){
+        $("#text").text("Text changed using jQuery");
+    });
+
+    // Add CSS class
+    $("#add").click(function(){
+        $("#text").addClass("highlight");
+    });
+
+    // Remove CSS class
+    $("#remove").click(function(){
+        $("#text").removeClass("highlight");
+    });
+
+});
+
+</script>
+
+<style>
+
+.highlight{
+color:white;
+background-color:blue;
+font-size:20px;
+padding:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>jQuery Get, Set, Add, Remove CSS Classes</h2>
+
+<p id="text">This is a sample text</p>
+
+<button id="get">Get Text</button>
+<button id="set">Set Text</button>
+<button id="add">Add Class</button>
+<button id="remove">Remove Class</button>
+
+</body>
+</html>
+
+Output:-
+
+ 
+
+
