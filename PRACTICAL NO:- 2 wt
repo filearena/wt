@@ -1,0 +1,108 @@
+AIM:- 2) Design a webpage that makes use of
+a)	List tags
+b)	Image and Image Maps.
+
+Code:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML List Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML List Tags Example</h1>
+
+    <!-- Unordered List -->
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Wake up</li>
+        <li>Brush teeth</li>
+        <li>Go to college</li>
+    </ol>
+
+    <!-- Description List -->
+    <h2>Description List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language used to create web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Used to style web pages</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Makes web pages interactive</dd>
+    </dl>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+b)Image and Image Maps
+
+code:-
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+
+    <h1>Image and Image Map Example</h1>
+    <p>Click different parts of the image below:</p>
+
+    <!-- Image -->
+    <img src="https://via.placeholder.com/400x200"
+         alt="Sample Image"
+         usemap="#mymap"
+         width="400"
+         height="200">
+
+    <!-- Image Map -->
+    <map name="mymap">
+
+        <!-- Left side of image -->
+        <area shape="rect"
+              coords="0,0,200,200"
+              href="https://www.google.com"
+              alt="Google"
+              target="_blank">
+
+        <!-- Right side of image -->
+        <area shape="rect"
+              coords="200,0,400,200"
+              href="https://www.wikipedia.org"
+              alt="Wikipedia"
+              target="_blank">
+
+    </map>
+
+</body>
+</html>
+
+
+
