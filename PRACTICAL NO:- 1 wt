@@ -1,0 +1,83 @@
+AIM:- 1) Design a webpage that makes use of
+a)	Document Structure Tags
+ b) Various Text Formatting Tags
+
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Structure Tags</title>
+</head>
+
+<body>
+
+    <h1>HTML Document Structure</h1>
+
+    <p>
+        This webpage demonstrates the use of basic HTML document structure tags.
+    </p>
+
+    <h2>Used Document Structure Tags</h2>
+
+    <ul>
+        <li>&lt;!DOCTYPE html&gt;</li>
+        <li>&lt;html&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;title&gt;</li>
+        <li>&lt;body&gt;</li>
+    </ul>
+
+</body>
+</html>
+
+
+
+ 
+
+
+
+
+
+
+
+
+b)	Various Text Formatting Tags
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Formatting Tags</title>
+</head>
+
+<body>
+
+    <h1>HTML Text Formatting Tags</h1>
+
+    <p><b>This text is bold using the b tag.</b></p>
+
+    <p><strong>This text is strong using the strong tag.</strong></p>
+
+    <p><i>This text is italic using the i tag.</i></p>
+
+    <p><em>This text is emphasized using the em tag.</em></p>
+
+    <p><u>This text is underlined using the u tag.</u></p>
+
+    <p><mark>This text is highlighted using the mark tag.</mark></p>
+
+    <p><small>This text is smaller using the small tag.</small></p>
+
+    <p><del>This text is deleted using the del tag.</del></p>
+
+    <p>
+        Chemical Formula: H<sub>2</sub>O <br>
+        Mathematical Expression: X<sup>2</sup> + Y<sup>2</sup>
+    </p>
+
+</body>
+</html>
+
+
+
+ 
+
