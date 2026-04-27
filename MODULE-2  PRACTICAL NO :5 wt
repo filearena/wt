@@ -1,0 +1,106 @@
+AIM:- Create a XML file with Internal / External DTD and display it using CSS
+Code:-
+i) students_internal.xml
+<?xml version="1.0"?>
+
+<!DOCTYPE students [
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, course, marks)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+
+]>
+
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<students>
+
+<student>
+<name>Rahul</name>
+<course>Computer Science</course>
+<marks>85</marks>
+</student>
+
+<student>
+<name>Anita</name>
+<course>Data Science</course>
+<marks>90</marks>
+</student>
+
+</students>
+
+ii) students_external.xml
+Code:-
+<?xml version="1.0"?>
+
+<!DOCTYPE students SYSTEM "students.dtd">
+
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<students>
+
+<student>
+<name>Rahul</name>
+<course>Computer Science</course>
+<marks>85</marks>
+</student>
+
+<student>
+<name>Anita</name>
+<course>Data Science</course>
+<marks>90</marks>
+</student>
+
+</students>
+
+iii) students.dtd
+
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, course, marks)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+iv) style.css
+students{
+display:block;
+font-family:Arial;
+margin:20px;
+}
+
+student{
+display:block;
+border:1px solid black;
+padding:10px;
+margin:10px;
+background-color:#f2f2f2;
+}
+
+name{
+display:block;
+font-weight:bold;
+color:blue;
+}
+
+course{
+display:block;
+color:green;
+}
+
+marks{
+display:block;
+color:red;
+}
+
+
+
+Output:-
+All files must be in the same folder.
+project_folder
+│
+├── students_internal.xml
+├── students_external.xml
+├── students.dtd
+└── style.css
+
+ 
