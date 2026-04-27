@@ -1,0 +1,176 @@
+AIM:- Write JavaScript code for Demonstrating different JavaScript Objects such as String, RegExp, Math, Date
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Objects Example</title>
+
+<script>
+
+function showObjects() {
+
+    // String Object
+    var text = "JavaScript Programming";
+    var length = text.length;
+
+    // RegExp Object
+    var pattern = /JavaScript/;
+    var result = pattern.test(text);
+
+    // Math Object
+    var randomNumber = Math.random();
+    var squareRoot = Math.sqrt(25);
+
+    // Date Object
+    var today = new Date();
+
+    document.getElementById("output").innerHTML =
+    "String Length: " + length + "<br>" +
+    "RegExp Test (JavaScript found?): " + result + "<br>" +
+    "Random Number: " + randomNumber + "<br>" +
+    "Square Root of 25: " + squareRoot + "<br>" +
+    "Current Date and Time: " + today;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>JavaScript Objects Demonstration</h2>
+
+<button onclick="showObjects()">Show Results</button>
+
+<p id="output"></p>
+
+</body>
+</html>
+
+output:-
+ 
+
+
+
+
+
+B) Demonstrating different JavaScript Objects such as Window, Navigator, History, Location, Document
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Browser Objects</title>
+
+<script>
+
+function showWindow() {
+    alert("Window Width: " + window.innerWidth);
+}
+
+function showNavigator() {
+    document.getElementById("output").innerHTML =
+    "Browser Name: " + navigator.appName +
+    "<br>Browser Version: " + navigator.appVersion;
+}
+
+function showLocation() {
+    document.getElementById("output").innerHTML =
+    "Current URL: " + location.href;
+}
+
+function goBack() {
+    history.back();
+}
+
+function changeText() {
+    document.getElementById("output").innerHTML =
+    "This text was changed using Document Object";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>JavaScript Browser Objects Example</h2>
+
+<button onclick="showWindow()">Window Object</button>
+<button onclick="showNavigator()">Navigator Object</button>
+<button onclick="showLocation()">Location Object</button>
+<button onclick="goBack()">History Object</button>
+<button onclick="changeText()">Document Object</button>
+
+<p id="output">Click buttons to see results</p>
+
+</body>
+</html>
+
+
+Output:-
+ 
+
+
+
+
+
+
+c) Storing and Retrieving Cookies
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cookie Example</title>
+
+<script>
+
+// Store Cookie
+function setCookie() {
+    var username = document.getElementById("name").value;
+    document.cookie = "username=" + username;
+    alert("Cookie Stored Successfully");
+}
+
+// Retrieve Cookie
+function getCookie() {
+    var name = "username=";
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var c = cookies[i].trim();
+
+        if (c.indexOf(name) == 0) {
+            var value = c.substring(name.length);
+            document.getElementById("result").innerHTML =
+            "Stored Username: " + value;
+            return;
+        }
+    }
+
+    document.getElementById("result").innerHTML = "Cookie not found";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Storing and Retrieving Cookies</h2>
+
+Enter Name:
+<input type="text" id="name">
+
+<br><br>
+
+<button onclick="setCookie()">Store Cookie</button>
+<button onclick="getCookie()">Retrieve Cookie</button>
+
+<p id="result"></p>
+
+</body>
+</html>
+
+Output:-
+ 
