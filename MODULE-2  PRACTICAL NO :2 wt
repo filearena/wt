@@ -1,0 +1,48 @@
+AIM:- Java Script Events and Event Handlers: 
+a) Handling User Interactions Using JavaScript Events and Event Handlers.
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Events Example</title>
+
+<script>
+
+function showMessage() {
+    document.getElementById("result").innerHTML = "Button was clicked!";
+}
+
+function changeText() {
+    document.getElementById("result").innerHTML = "Mouse moved over the text!";
+}
+
+function resetText() {
+    document.getElementById("result").innerHTML = "Mouse moved away!";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Handling User Interaction using JavaScript Events</h2>
+
+<button onclick="showMessage()">Click Me</button>
+<br><br>
+
+<p onmouseover="changeText()" onmouseout="resetText()">
+Move your mouse over this text
+</p>
+
+<h3 id="result">Result will appear here</h3>
+
+</body>
+</html>
+
+output:-
+
+ 
+
+
+
