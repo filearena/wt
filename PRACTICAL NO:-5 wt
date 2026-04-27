@@ -1,0 +1,172 @@
+AIM:-  Design a webpage that makes use of  
+a)Navigation across multiple pages 
+b) Embedded Multimedia elements.
+CODE:-
+
+STEP 1: Create a Folder named navigation-website.
+Inside the folder Create these files:
+index.html
+about.html
+courses.html
+contact.html
+
+Step2- 
+i) Index.html
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h1>My College Website</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact</a>
+
+    <hr>
+
+    <h2>Welcome to Home Page</h2>
+    <p>This is the home page.</p>
+
+</body>
+</html>
+
+
+ii) about.html
+code
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page</title>
+</head>
+<body>
+
+    <h1>About Us</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact</a>
+
+    <hr>
+
+    <p>This page contains information about the college.</p>
+
+</body>
+</html>
+iii) courses.html
+code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses Page</title>
+</head>
+<body>
+
+    <h1>Courses Offered</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact</a>
+
+    <hr>
+
+    <ul>
+        <li>B.Sc IT</li>
+        <li>BCA</li>
+        <li>B.Com</li>
+        <li>BMS</li>
+    </ul>
+
+</body>
+</html>
+iv) contact.html
+code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Page</title>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="contact.html">Contact</a>
+
+    <hr>
+
+    <p>Email: college@gmail.com</p>
+    <p>Phone: 9876543210</p>
+
+</body>
+</html>
+ 
+
+ 
+ 
+ 
+B) Embedded Multimedia elements.
+
+Save everything in one folder:
+multimedia-webpage
+│
+├── index.html
+├── image.jpg
+├── audio.mp3
+└── video.mp4
+Index.html
+Code:-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Multimedia</title>
+</head>
+<body>
+
+    <h1>Embedded Multimedia Webpage</h1>
+
+    <hr>
+
+    <!-- Image -->
+    <h2>Image Example</h2>
+    <img src="image.jpg" width="300" height="200" alt="Sample Image">
+
+    <hr>
+
+    <!-- Audio -->
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <hr>
+
+    <!-- Video -->
+    <h2>Video Example</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <hr>
+
+    <!-- YouTube Video -->
+    <h2>Embedded YouTube Video</h2>
+    <iframe width="420" height="250"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+    </iframe>
+
+</body>
+</html>
+
+Output:-
